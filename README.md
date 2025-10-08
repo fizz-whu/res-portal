@@ -1,4 +1,29 @@
-# React + Vite
+# res-portal
+
+React app deployed to AWS CloudFront and S3.
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+This project automatically deploys to AWS S3 and CloudFront when changes are pushed to the `main` branch.
+
+### Required GitHub Secrets
+
+Configure the following secrets in your GitHub repository settings (Settings → Secrets and variables → Actions):
+
+- `AWS_ACCESS_KEY_ID` - Your AWS access key ID
+- `AWS_SECRET_ACCESS_KEY` - Your AWS secret access key
+- `AWS_REGION` - AWS region (e.g., `us-east-1`)
+- `S3_BUCKET` - Your S3 bucket name
+- `CLOUDFRONT_DISTRIBUTION_ID` - Your CloudFront distribution ID
+
+## Vite + React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
