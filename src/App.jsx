@@ -4,6 +4,7 @@ import Registration from './pages/Registration'
 import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import MenuManagement from './pages/MenuManagement'
+import Settings from './pages/Settings'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/menu" element={<MenuManagement />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </Router>
   )
