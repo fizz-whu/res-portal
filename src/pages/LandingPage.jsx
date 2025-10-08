@@ -16,9 +16,9 @@ function LandingPage() {
               <Link className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-primary/90 transition-colors duration-300" to="/register">
                 Register Restaurant
               </Link>
-              <a className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-primary bg-primary/10 hover:bg-primary/20 dark:text-primary dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors duration-300" href="#">
+              <Link className="w-full sm:w-auto flex items-center justify-center px-8 py-4 border border-transparent text-base font-medium rounded-lg text-primary bg-primary/10 hover:bg-primary/20 dark:text-primary dark:bg-primary/20 dark:hover:bg-primary/30 transition-colors duration-300" to="/login">
                 Login
-              </a>
+              </Link>
             </div>
           </div>
         </div>
