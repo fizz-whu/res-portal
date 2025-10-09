@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 function Settings() {
+  const [restaurantId, setRestaurantId] = useState('REST-1728345678901-ABC123')
   const [restaurantName, setRestaurantName] = useState('The Tasty Spoon')
   const [address, setAddress] = useState('123 Main Street, Anytown, CA 91234')
   const [phone, setPhone] = useState('(555) 123-4567')
@@ -57,6 +58,31 @@ function Settings() {
           </header>
 
           <div className="space-y-8">
+            {/* Restaurant ID */}
+            <div className="bg-card-light dark:bg-card-dark rounded-lg shadow-soft p-6">
+              <div className="flex-1">
+                <label className="block text-sm font-medium text-subtle-light dark:text-subtle-dark">Restaurant ID</label>
+                <div className="mt-1 flex items-center gap-3">
+                  <input
+                    className="block w-full bg-transparent border-0 border-b-2 border-border-light dark:border-border-dark focus:ring-0 p-0 text-lg font-mono font-semibold text-primary"
+                    type="text"
+                    value={restaurantId}
+                    readOnly
+                    disabled
+                  />
+                  <button
+                    onClick={() => navigator.clipboard.writeText(restaurantId)}
+                    className="px-3 py-1.5 rounded-lg bg-primary/10 dark:bg-primary/20 text-primary text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors whitespace-nowrap"
+                  >
+                    Copy ID
+                  </button>
+                </div>
+                <p className="mt-2 text-xs text-subtle-light dark:text-subtle-dark">
+                  This ID is used to match orders from the Lex bot (CnRes001) in DynamoDB
+                </p>
+              </div>
+            </div>
+
             {/* Restaurant Name */}
             <div className="bg-card-light dark:bg-card-dark rounded-lg shadow-soft p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
               <div className="flex-1">
