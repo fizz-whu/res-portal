@@ -38,10 +38,16 @@ function Registration() {
               <label className="block text-sm font-medium text-foreground-light dark:text-foreground-dark mb-1" htmlFor="cuisine-type">Cuisine Type</label>
               <select className="w-full px-4 py-3 bg-input-light dark:bg-input-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary" id="cuisine-type">
                 <option>Select Cuisine Type</option>
-                <option>Italian</option>
-                <option>Mexican</option>
-                <option>Japanese</option>
+                <option>American</option>
+                <option>Chinese</option>
                 <option>Indian</option>
+                <option>Italian</option>
+                <option>Japanese</option>
+                <option>Mediterranean</option>
+                <option>Mexican</option>
+                <option>Middle Eastern</option>
+                <option>Thai</option>
+                <option>Vegan / Vegetarian</option>
               </select>
             </div>
             <div>
