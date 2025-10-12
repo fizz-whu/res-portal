@@ -43,6 +43,7 @@ function Registration() {
                 <option>Indian</option>
                 <option>Italian</option>
                 <option>Japanese</option>
+                <option>Korean</option>
                 <option>Mediterranean</option>
                 <option>Mexican</option>
                 <option>Middle Eastern</option>
